@@ -18,7 +18,7 @@ object DriverManager {
 
   def create(): Option[WebDriver] = {
     System.setProperty("webdriver.chrome.driver", chrome_path);
-    var driver = new ChromeDriver();
+    val driver = new ChromeDriver();
     registry.set(driver);
     return Some(driver);
   }
