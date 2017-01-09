@@ -25,8 +25,8 @@ package object CoreLocators {
     }
 
 
-    implicit def toPredicate(function: WebDriver => Unit): Predicate[WebDriver] = new Predicate[WebDriver]() {
-      override def apply(arg: WebDriver): Unit = function.apply(arg)
+    implicit def toPredicate(function: WebDriver => Boolean): Predicate[WebDriver] = new Predicate[WebDriver]() {
+      override def apply(arg: WebDriver): Boolean = function.apply(arg)
     }
 
   }

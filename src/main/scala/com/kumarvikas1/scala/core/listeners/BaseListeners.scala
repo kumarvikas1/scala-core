@@ -5,9 +5,9 @@ import java.util.function.Consumer
 import com.google.common.base.{Strings, Throwables}
 import com.kumarvikas1.scala.core.report.BaseReporter
 import com.kumarvikas1.scala.core.test.{TestResult, TestResultInventory}
-import org.scalatest.events.{Event, InfoProvided}
 import org.scalatest.Reporter
-import org.scalatest.events._
+import org.scalatest.events.{Event, InfoProvided, _}
+
 /**
   * Created by vikakumar on 12/18/16.
   */
